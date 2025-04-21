@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binayak Mohanta | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-light: #f7f9fc;
+            --text-dark: #1f2937;
+            --primary: #1e3a8a;
+            --accent: #2563eb;
+            --bg-dark: #1f2937;
+            --text-light: #f7f9fc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        header, footer {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 0.5rem 0;
+        }
+
+        section {
+            padding: 2rem 4rem;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+
+        .project, .achievement, .experience {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .toggle-theme {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            border: 2px solid var(--accent);
+            color: var(--primary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .toggle-theme:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Binayak Mohanta</h1>
+        <p>Computer Science Sophomore | SRM Institute of Science and Technology</p>
+        <button class="toggle-theme" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I'm a passionate Computer Science Engineering student with a keen interest in AI, cybersecurity, and software development. Always exploring new technologies and building creative solutions.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>C/C++, Java, Python, SQL</li>
+            <li>Data Structures and Algorithms, OOPs</li>
+            <li>Git/GitHub</li>
+            <li>UI/UX: Figma, Canva</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project">
+            <strong>NIDS:</strong> Network Intrusion Detection System using Python and MySQL
+        </div>
+        <div class="project">
+            <strong>Emotion Detection AI:</strong> Facial expression-based mood analysis using MobileNetV2 and Google Colab
+        </div>
+        <div class="project">
+            <strong>LibDEX:</strong> Library management tool in Python with MySQL backend
+        </div>
+        <div class="project">
+            <strong>CodonCraft:</strong> Protein translation program using fasta files
+        </div>
+        <div class="project">
+            <strong>Carbon Footprint Tracker:</strong> Emission calculator built with Java and Swing
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="experience">
+            <strong>IEEE GRSS SRM Student Chapter:</strong> Research Team Member (Oct 2024 – Present)
+        </div>
+        <div class="experience">
+            <strong>Aaruush (Malefice & Entrepreneurial Symposium):</strong> Event Coordinator (Aug 2024 – Present)
+        </div>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <div class="achievement">Won Best Project at Tecknow by Dept. of Physics and Nanotech</div>
+        <div class="achievement">First Prize at Creative Ingenuity'23 by Mechanical Engg. Dept.</div>
+        <div class="achievement">Completed NPTEL Java Course (Jul–Oct 2024)</div>
+        <div class="achievement">Cleared CodeChef Skill Tests: Java, C, Operating Systems</div>
+    </section>
+
+    <section>
+        <h2>Blog (Coming Soon)</h2>
+        <p>Stay tuned for articles on tech, projects, and coding tips!</p>
+    </section>
+
+    <section>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://github.com/BinayakMohanta" target="_blank">GitHub</a></li>
+            <li><a href="https://www.hackerrank.com/profile/bm8495" target="_blank">HackerRank</a></li>
+            <li><a href="http://www.linkedin.com/in/binayakmohanta" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:binayakmohanta3124@gmail.com">Email Me</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 Binayak Mohanta. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
